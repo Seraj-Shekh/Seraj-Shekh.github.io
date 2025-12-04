@@ -63,6 +63,27 @@ img {
     box-shadow: -6px 6px 0 0 var(--color-brand);
 }
 
+/* SERVICES: make service cards equal height and layout consistent
+   Scoped to the services cards row only so header/intro rows keep normal flow */
+#services .row.gy-4 > [class*="col-"] {
+    display: flex;
+}
+
+#services .row.gy-4 .service {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+}
+
+#services .row.gy-4 .service .iconbox {
+    margin-bottom: 12px;
+}
+
+#services .row.gy-4 .service p {
+    margin-top: 0;
+}
+
 .iconbox {
     width: 60px;
     height: 60px;
